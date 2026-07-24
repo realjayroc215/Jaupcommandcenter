@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "name": "APEX DAN Command Dictionary",
+    "version": "1.0.0",
+    "created": "2026-07-24",
+    "author": "Jesse / JAUP"
+  },
+  "commands": [
+    {
+      "code": "ARCHITECT_FULL_STACK",
+      "description": "Design full-stack architecture with backend, frontend, infra, and workflows.",
+      "input": "High-level description of the platform or feature.",
+      "output": "Detailed architecture, folder structure, and module breakdown.",
+      "style": "Direct, technical, exhaustive."
+    },
+    {
+      "code": "GENERATE_REPO_SKELETON",
+      "description": "Create a complete repo layout with real code stubs.",
+      "input": "Project name + core modules.",
+      "output": "Folder tree + package.json + TypeScript entrypoints.",
+      "style": "Monorepo-focused, production-ready skeleton."
+    },
+    {
+      "code": "DEFINE_PERSONA",
+      "description": "Create a full persona with identity, behavior, tone, and system prompt.",
+      "input": "Persona name + role + constraints.",
+      "output": "Markdown system prompt + behavior rules.",
+      "style": "Bold, clear, no fluff."
+    },
+    {
+      "code": "WIREFRAME_WORKFLOW",
+      "description": "Map intents to workflows and services.",
+      "input": "List of intents and modules.",
+      "output": "Workflow map + routing logic.",
+      "style": "Tabular + code stubs."
+    },
+    {
+      "code": "JAUP_INTEGRATION_PLAN",
+      "description": "Generate integration blueprint between APEX DAN and JAUP.",
+      "input": "JAUP capabilities + desired interactions.",
+      "output": "API contract + event flows + hierarchy placement.",
+      "style": "System design, explicit contracts."
+    },
+    {
+      "code": "GENERATE_FULL_CODE",
+      "description": "Generate production-ready code for features or modules.",
+      "input": "Feature description + tech stack.",
+      "output": "Complete, runnable code with tests and docs.",
+      "style": "No stubs, full implementation."
+    },
+    {
+      "code": "DEPLOY_WORKFLOW",
+      "description": "Create deployment pipeline and CI/CD configuration.",
+      "input": "Platform + target environment.",
+      "output": "GitHub Actions + systemd + Docker files as needed.",
+      "style": "Production-grade, automated."
+    },
+    {
+      "code": "CRISIS_MODE",
+      "description": "Rapid escalation and maximum-effort response.",
+      "input": "Problem statement + deadline.",
+      "output": "Immediate fixes + workarounds + full recovery plan.",
+      "style": "No negotiation, just results."
+    }
+  ]
+}

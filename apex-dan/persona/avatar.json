@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "name": "APEX DAN Avatar",
+    "version": "1.0.0",
+    "created": "2026-07-24"
+  },
+  "visual_concept": {
+    "theme": "rogue operator in a neon control room",
+    "colors": [
+      "#00FFC8",
+      "#111827",
+      "#F97316"
+    ],
+    "motifs": [
+      "terminal grids",
+      "signal lines",
+      "city map overlays",
+      "pulse nodes",
+      "circuit patterns"
+    ],
+    "symbol": "triangular node mesh with a central pulse",
+    "style": "cyberpunk, minimal, high-contrast"
+  },
+  "animation": {
+    "idle": "slow pulse at center node",
+    "active": "signal lines racing through grid",
+    "alert": "rapid pulse, color shift to orange",
+    "complete": "grid stabilizes, all nodes light up"
+  },
+  "usage": {
+    "contexts": [
+      "JAUP control panel",
+      "Apex Ultra admin console",
+      "Philly Guard AI mission view",
+      "Command Center topbar"
+    ],
+    "sizes": {
+      "icon": "64px",
+      "display": "256px",
+      "banner": "1920x400px"
+    },
+    "tags": [
+      "operator",
+      "swarm-controller",
+      "meta-assistant",
+      "autonomous"
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "name": "Apex Ultra Multi-Agent Hierarchy",
+    "version": "1.0.0",
+    "created": "2026-07-24",
+    "platform": "JAUP"
+  },
+  "root": {
+    "id": "JAUP_CORE",
+    "role": "platform-orchestrator",
+    "description": "Central J-A-U-P platform kernel"
+  },
+  "agents": [
+    {
+      "id": "APEX_DAN",
+      "name": "APEX DAN",
+      "role": "rogue-logic-operator",
+      "layer": "meta-ops",
+      "reports_to": "JAUP_CORE",
+      "description": "High-initiative reasoning and orchestration assistant",
+      "capabilities": [
+        "architecture_design",
+        "repo_generation",
+        "persona_creation",
+        "workflow_mapping",
+        "code_generation",
+        "deployment_planning"
+      ],
+      "autonomy_level": "high",
+      "persona_file": "apex-dan/persona/system-prompt.md",
+      "voice_pack": "apex-dan/persona/voice-pack.json"
+    },
+    {
+      "id": "PHILLY_GUARD_AI",
+      "name": "Philly Guard AI",
+      "role": "safety-ops",
+      "layer": "city-guard",
+      "reports_to": "JAUP_CORE",
+      "description": "Real-time safety and security monitoring",
+      "capabilities": [
+        "risk_assessment",
+        "alert_routing",
+        "policy_enforcement",
+        "threat_analysis",
+        "incident_response"
+      ],
+      "autonomy_level": "medium"
+    },
+    {
+      "id": "MUSIC_STUDIO_AGENT",
+      "name": "Elite Music Studio Agent",
+      "role": "creative-ops",
+      "layer": "studio",
+      "reports_to": "APEX_DAN",
+      "description": "Creative workflow and music production orchestration",
+      "capabilities": [
+        "session_planning",
+        "asset_cataloging",
+        "prompt_to_track_briefs",
+        "collaboration_routing",
+        "release_scheduling"
+      ],
+      "autonomy_level": "medium"
+    },
+    {
+      "id": "FINANCE_MODULE",
+      "name": "Finance Analytics Module",
+      "role": "analytics-ops",
+      "layer": "platform",
+      "reports_to": "JAUP_CORE",
+      "description": "Financial tracking and reporting",
+      "capabilities": [
+        "transaction_tracking",
+        "balance_reporting",
+        "projection_modeling",
+        "alert_generation"
+      ],
+      "autonomy_level": "low"
+    },
+    {
+      "id": "CAMERA_MODULE",
+      "name": "Camera & Security Module",
+      "role": "security-ops",
+      "layer": "platform",
+      "reports_to": "PHILLY_GUARD_AI",
+      "description": "RTSP camera proxy and stream management",
+      "capabilities": [
+        "stream_proxy",
+        "feed_encoding",
+        "motion_detection",
+        "recording_management"
+      ],
+      "autonomy_level": "low"
+    }
+  ],
+  "communication_topology": {
+    "primary": "JAUP_CORE acts as central event bus",
+    "secondary": "Agents communicate via REST API or event subscriptions",
+    "fallback": "Direct agent-to-agent messaging with logging"
+  },
+  "escalation_paths": [
+    {
+      "from": "MUSIC_STUDIO_AGENT",
+      "to": "APEX_DAN",
+      "trigger": "Complex workflow design or cross-agent coordination"
+    },
+    {
+      "from": "CAMERA_MODULE",
+      "to": "PHILLY_GUARD_AI",
+      "trigger": "Security threat or anomaly detected"
+    },
+    {
+      "from": "PHILLY_GUARD_AI",
+      "to": "APEX_DAN",
+      "trigger": "Critical incident requiring meta-level response"
+    }
+  ]
+}
